@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <script defer src="/script.js"></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header bg-container">
+    <img class="logo" src="/images/logo.svg" alt="snap logo">
+    <nav class="nav row">
+      <ul class="nav-list nav-list-primary row">
+        <li class="list-item drop-list">
+          <a href="" class="list-link">Features</a>
+          <button class="drop-list-btn drop-list-btn-1"></button>
+          <ul class="nav-list-dropped first-list">
+            <li class="list-item col">
+              <img class="features-logo" src="/images/icon-todo.svg" alt="to do icon">
+              <a href="" class="list-link">Todo List</a>
+            </li>
+            <li class="list-item col">
+              <img class="features-logo" src="/images/icon-calendar.svg" alt="calendar icon">
+              <a href="" class="list-link">Calendar</a>
+            </li>
+            <li class="list-item col">
+              <img class="features-logo" src="/images/icon-reminders.svg" alt="reminder icon">
+              <a href="" class="list-link">Reminders</a>
+            </li>
+            <li class="list-item col">
+              <img class="features-logo" src="/images/icon-planning.svg" alt="planning icon">
+              <a href="" class="list-link">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list-item">
+          <a href="" class="list-link">Company</a>
+          <button class="drop-list-btn drop-list-btn-2">
+          </button>
+          <ul class="nav-list-dropped second-list">
+            <li class="list-item"> <a href="" class="list-link">History</a></li>
+            <li class="list-item"> <a href="" class="list-link">Our Team</a></li>
+            <li class="list-item"><a href="" class="list-link">Blog</a></li>
+          </ul></li>
+        <li class="list-item"><a class="list-link" href="#">Careers</a></li>
+        <li class="list-item"><a class="list-link" href="#">About</a></li>
+      </ul>  
+      <ul class="nav-list nav-list-secondary row">     
+        <li class="list-item"><a class="list-link" href="#">Login</a></li>
+        <li class="list-item list-item-btn"><a class="list-link list-link-btn" href="#">Register</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="open navigation">
+    </button>
+  </header>
+  <main class="main bg-container">
+    <div class="container">
+      <div class="main-hero">
+        <h1 class="hero-title">Make remote work</h1>
+        <p class="hero-text">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn">Learn more</button>
+        <div class="brands">
+          <img src="/images/client-databiz.svg" alt="databiz">
+          <img src="/images/client-audiophile.svg" alt="audiophile">
+          <img src="/images/client-meet.svg" alt="meet">
+          <img src="/images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+      <div class="img-background"></div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Moh Amine</a>
+  </div>
+</body>
+</html>

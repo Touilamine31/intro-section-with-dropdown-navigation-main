@@ -1,0 +1,380 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+    font-size: 1.125rem;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+.bg-container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*******
+ HEADER 
+ *******/   
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5em;
+} 
+
+.logo{
+    height: 1.5em;
+    width: 3em;
+}
+
+.nav-toggle{
+    border: 0;
+    width: 3em;
+    height: 2em;
+    cursor: pointer;
+    background-image: url(/images/icon-menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 0%, 98%);
+    position: absolute;
+    right: 0;
+}
+
+.nav-toggle-active{
+    background-image: url(/images/icon-close-menu.svg);
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.nav{
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.first-list{
+    height: 0;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+}
+
+.first-list--visible{
+    visibility: visible;
+    height: auto;
+    position: relative;
+    text-align: left;
+    margin-left: .5em;
+}
+
+.second-list{
+    height: 0;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+}
+
+.second-list--visible{
+    visibility: visible;
+    height: auto;
+    position: relative;
+    text-align: left;
+    margin-left: .5em;
+}
+
+.nav--visible{
+    visibility: visible;
+    height: 100%;
+    background-color: hsl(0, 0%, 98%);
+    right: 0;
+    width: 50%;
+    padding: 1em 0;
+    border: 1px solid transparent;
+}
+
+.nav-list{
+    list-style: none;
+    padding: 0 .5em;
+}
+
+.drop-list{
+    gap: .2em;
+}
+
+.drop-list-btn{
+    border: 0;
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-image: url(/images/icon-arrow-down.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.drop-list-btn-active{
+    background-image: url(/images/icon-arrow-up.svg);
+}
+
+.features-logo{
+    width: 1em;
+    height: 1em;
+}
+
+.nav-list-secondary{
+    align-items: center;
+}
+
+.list-item{
+    padding: 1em 0;
+    text-align: left;
+    list-style: none;
+}
+
+.list-link{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.list-link-btn{
+    border: 1.5px solid hsl(0, 0%, 41%);
+    padding: .5em 1.25em;
+    border-radius: 10px;
+}
+.list-item-btn{
+    margin-top: .5em;
+}
+
+/***********
+ HEADER END
+ ***********/
+
+.main{
+    width: 100%;
+}
+
+
+.container{
+    width: 100%;
+    padding: 2em 0 2.5em 0;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+}
+
+.main-hero{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+}
+
+.hero-title{
+    font-weight: 700;
+    color: black;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.hero-text{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: .75em 1.5em;
+    margin: .5em auto;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+}
+
+.img-background{
+    height: 50%;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(/images/image-hero-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.brands{
+    display: flex;
+    gap: 1em;
+    margin: .5em auto;
+    padding: .75em;
+}
+
+.brands img{
+    width: 4em;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 700px) {
+    
+    .header{
+        display: flex;
+        padding: 1em;
+        width: 100%;
+        margin: 0 auto;
+        gap: 2.5em;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nav-toggle{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav{
+        visibility: visible;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-link:hover{
+        color: hsl(0, 0%, 0%);
+    }
+
+    .list-link-btn:hover{
+        border: 1px solid hsl(0, 0%, 0%);
+    }
+
+    .nav-list-dropped{
+        list-style: none;
+        display: flex;
+        padding: 1em .5em;
+        margin: .5em;
+        align-items: flex-start;
+        background-color: hsl(0, 0%, 98%);
+        border: 1px solid transparent;
+        border-radius: 10px;
+        flex-direction: column;
+        position: absolute;
+        gap: .5em;
+        box-shadow: 1px 1px 10px hsl(0, 0%, 41%);
+    }
+
+    .list-item{
+        gap: .5em;
+        padding: 0;
+        text-align: center;
+    }
+
+    .second-list{
+        margin-left: 2em;
+    }
+
+    
+
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-background{
+        width: 50%;
+        min-height: 450px;
+        background-image: url(/images/image-hero-desktop.png);
+        background-position: center;
+    }
+
+    .main-hero{
+        text-align: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .hero-title{
+        font-weight: 700;
+        color: black;
+        width: 100%;
+        font-size: 5rem;
+    }
+    
+    .hero-text{
+        width: 80%;
+        margin: 0;
+    }
+
+    .btn{
+        padding: 1em 1.5em;
+        margin: 0 0 2rem 0;
+        width: 25%;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: hsl(0, 0%, 8%);
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .btn:hover,
+    .btn:focus{
+        background-color: #fff;
+        color: hsl(0, 0%, 0%);
+        border: 1px solid hsl(0, 0%, 0%);
+    }
+
+    .brands{
+        padding: 0;
+        margin: 0;
+    }
+}
